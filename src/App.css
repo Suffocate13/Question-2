@@ -1,0 +1,242 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000; 
+  color: #f4ede4; 
+    margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.CharacterGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.Character {
+  background-color: #2c2c2c; 
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  width: 300px; 
+  color: #e0e0e0; 
+}
+
+.Character img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+}
+
+.Character h3 {
+  margin: 10px 0 5px;
+}
+
+.Character p {
+  margin: 5px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #e74c3c; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #c0392b; 
+}
+
+
+.CharacterDetails {
+  background-color: #2c2c2c; 
+  color: #e0e0e0; 
+  border: 1px solid #333; 
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+
+.phones {
+  background-color: #f0f0f0; 
+  border: 1px solid #ddd; 
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 300px; 
+  color: #333; 
+}
+
+.phones img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px; 
+}
+
+.phones h2 {
+  color: #00bcd4; 
+}
+
+.phones p {
+  color: #666; /
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00bcd4; 
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0097a7; 
+}
+
+
+@media (max-width: 768px) {
+  .Character, .phones {
+    width: 100%; 
+    flex: 1 0 46%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .Character, .phones {
+    flex: 1 0 100%; 
+  }
+}
+
+
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+.card {
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.container {
+  padding: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #a77f6d; 
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8c5e3c;
+}
+
+button:focus {
+  outline: none;
+}
+
+
+
+.CharacterGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; 
+}
+
+.Character {
+  cursor: pointer;
+}
+
+.Character img {
+  width: 100px; 
+  height: auto;
+}
+
+.selected-character-container {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: relative;
+}
+
+.selected-character-container img {
+  width: 200px; 
+  height: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
