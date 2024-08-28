@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import CharactersComponent from './components/CharacterComponent';
-import PhoneModels from './components/PhoneModels';
 
 function App() {
   const [selectedCharacter, setSelectedCharacter] = useState(null);
